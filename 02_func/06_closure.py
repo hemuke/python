@@ -74,6 +74,7 @@ def outer4():
     print("例子四 外函数:", a)
     return inner4
 
+
 print()
 #outer4()()
 #print("例子四__closure__:", outer4().__closure__)
@@ -90,6 +91,7 @@ def outer4B():
     inner4()
     
     print("例子四B 外函数:", a)
+
 
 print()
 outer4B()
@@ -109,6 +111,8 @@ def outer5():
 
     print("例子五，内函数:", a)
     return inner5
+
+
 print()
 outer5()()
 print("例子五__closure__:", outer5().__closure__)
