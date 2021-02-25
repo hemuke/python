@@ -1,2 +1,2 @@
 # python
-python_基础语法
+python基础语法
