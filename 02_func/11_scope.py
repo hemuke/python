@@ -1,20 +1,21 @@
 #! /root/anaconda3/bin/python
 # 例子一
-if True:
-    temp = 18
-print(temp)
+g = [1]
 
+
+def f1():
+    g = [2]
+    print(g)
+
+
+f1()
+print(g)
 
 # 例子二
-for item in [1, 2, 3]:
-    print(item)
+def f2():
+    g[0] = 2
+    print(g)
 
-print(item)
 
-# 例子三
-try:
-    result = 5
-except:
-    pass
-
-print(result)
+f2()
+print(g)

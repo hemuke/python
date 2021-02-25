@@ -1,47 +1,36 @@
 #! /root/anaconda3/bin/python
 # 例子一
-print(id(123))
-#id = "Global"
+def do_sth(a):
+    print(a)
+    b = 3
+    print(b)
 
 
-def outside():
-    #id = "Enclosing"
+do_sth(3)
 
-    def inside():
-        #id = "Local"
-        print(id)
+try:
+    print(a)
+except Exception as err:
+    print(err)
 
-    inside()
-
-
-outside()
-
+try:
+    print(b)
+except Exception as err:
+    print(err)
 
 
 # 例子二
-i = 11
+def outer():
+    m = 5
+
+    def inner():
+        print(m)
+
+    inner()
 
 
-def fun1():
-    i = 22
-    print(i)
-
-
-fun1()
-print(i)
-
-
-# 例子三
-j = 0
-
-
-def fun2():
-    try:
-        print(j)
-    except Exception as err:
-        print(err)
-
-    j = 5
-
-
-fun2()
+outer()
+try:
+    print(m)
+except Exception as err:
+    print(err)

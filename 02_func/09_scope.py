@@ -1,37 +1,47 @@
 #! /root/anaconda3/bin/python
 # 例子一
-g = 18
+print(id(123))
+#id = "Global"
 
 
-def f1():
-    g = 19
-    print(g)
+def outside():
+    #id = "Enclosing"
+
+    def inside():
+        #id = "Local"
+        print(id)
+
+    inside()
 
 
-f1()
-print(g)
+outside()
 
 
 
 # 例子二
-def f2():
-    global g
-    g = 20
-    print(g)
+i = 11
 
 
-f2()
-print(g)
+def fun1():
+    i = 22
+    print(i)
+
+
+fun1()
+print(i)
 
 
 # 例子三
-def f3():
-    g += 1
-    print(g)
+j = 0
 
 
-try:
-    f3()
-except Exception as err:
-    print(type(err))
-    print(err)
+def fun2():
+    try:
+        print(j)
+    except Exception as err:
+        print(err)
+
+    j = 5
+
+
+fun2()
