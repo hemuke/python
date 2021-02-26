@@ -19,3 +19,5 @@ def a_function_requiring_decoration():
  
 a_function_requiring_decoration()
 print(a_function_requiring_decoration.__name__)
+
+#https://www.runoob.com/w3cnote/python-func-decorators.html
