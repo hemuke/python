@@ -13,4 +13,4 @@
 '''
 
 with open('myfile4.txt', 'a') as file:
-    file.write('python')
+    file.write('python\n')
