@@ -3,7 +3,7 @@
 
 def fac(n):
     """ 
-    阶乘递归
+    求阶乘递归
     """
     if n == 1:
         return 1
@@ -16,7 +16,7 @@ print(fac.__doc__)
 
 def fib(n):
     """ 
-    斐波那切数列
+    求指定位置的斐波那切数列的值
     """
     if n == 0:
         return 0
@@ -25,4 +25,23 @@ def fib(n):
     return fib(n - 1) + fib(n - 2)
 
 
-print(fac(4))
+print(fib(6))
+
+
+def fib2(m):
+    """
+    斐波那切数列求和
+    """
+    i = 0
+    a = 0
+    b = 1
+    sum = 0
+    while i <= m:
+        print(a)
+        sum += a
+        a, b = b, a + b
+        i += 1
+    print("合", sum)
+
+
+fib2(6)
