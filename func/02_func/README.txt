@@ -13,3 +13,4 @@
 13)locals globals作用域的命名空间
 14)locals作用域的命名空间
 15)globals作用域的命名空间
+16)到最后都是装饰器
