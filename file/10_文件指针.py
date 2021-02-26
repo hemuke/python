@@ -15,7 +15,7 @@ worldhellohello
 with open('myfile.txt', 'rb') as file:
     print(file.tell())
 
-    file.seek(5)
+    file.seek(5, os.SEEK_SET)
     print(file.tell())
 
     file.seek(4, os.SEEK_CUR)
