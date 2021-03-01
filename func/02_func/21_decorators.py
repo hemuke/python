@@ -15,14 +15,13 @@ def log3(month, day):
         return wrapper
     return decorator
 
-@log3('6月', '18日') 
 """
 add3 = log3('6月', '18日')(add3)
 log3('6月', '18日') -----> return decorator 内存地址
 log3('6月', '18日')(add3) -----> return wrapper 内存地址
 log3('6月', '18日')(add3)(1,2) -----> return func(*args, **kwargs)
 """
-
+@log3('6月', '18日') 
 def add3(sum1, sum2):
     print(sum1, sum2)
     return sum1 + sum2
@@ -30,3 +29,8 @@ def add3(sum1, sum2):
 print(add3(1, 2))
 print(log3.__name__)
 print(add3.__name__)
+
+print('line total:', log3('6月', '18日')(add3).__closure__)
+print('line first:', log3('6月', '18日')(add3).__closure__[0].cell_contents)
+print('line second', log3('6月', '18日')(add3).__closure__[1].cell_contents)
+print('line third', log3('6月', '18日')(add3).__closure__[2].cell_contents)

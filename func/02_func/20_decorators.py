@@ -22,3 +22,5 @@ def add2(sum1, sum2):
 
 print(add2(1, 3))
 print(add2.__name__)
+print(log2(add2).__closure__)
+print(log2(add2).__closure__[0].cell_contents)

@@ -26,3 +26,6 @@ a_function_requiring_decoration = a_new_decorator(a_function_requiring_decoratio
 print(a_function_requiring_decoration.__name__)
  
 a_function_requiring_decoration()
+
+print(a_new_decorator(a_function_requiring_decoration).__closure__)
+print(a_new_decorator(a_function_requiring_decoration).__closure__[0].cell_contents)
