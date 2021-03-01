@@ -33,7 +33,7 @@ def lookup_min_max(numbers):
     min_num = numbers[0]
     max_num = numbers[0]
 
-    for number in numbers:
+    for number in numbers[1: len(numbers)]:
         if min_num > number:
             min_num = number
         elif max_num < number:
