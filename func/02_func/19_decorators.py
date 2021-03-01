@@ -15,3 +15,5 @@ def add(sum1, sum2):
 
 print(add(1, 2))
 print(add.__name__) # wrapper
+# print(add.__closure__[0])
+# print(add.__closure__[0].cell_contents)

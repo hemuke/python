@@ -15,7 +15,6 @@ def outer1():
 
 outer1()()
 print('例子一__closure__:', outer1().__closure__)
-#print('例子一', outer1().__closure__[0].cell_contents)
 
 
 # 例子二
@@ -95,8 +94,6 @@ def outer4B():
 
 print()
 outer4B()
-print("例子四__closure__:", outer4().__closure__)
-print("例子四__closure__[0].cell_contents:", outer4().__closure__[0].cell_contents)
 
 
 # 例子五
