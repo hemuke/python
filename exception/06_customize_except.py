@@ -17,3 +17,6 @@ try:
     raise MyException("123", "abc")
 except MyException as err:
     print(err)
+
+my = MyException("a", "b")
+print(my)
