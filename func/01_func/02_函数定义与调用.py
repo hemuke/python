@@ -7,7 +7,8 @@ def decide_args(arg1, arg2):
     elif (not arg1) and (not arg2):
         return
     else:
-        result = arg1 or arg2
+        # result = arg1 or arg2
+        return arg1 or arg2
 
 
 print(decide_args)
