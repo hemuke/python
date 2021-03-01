@@ -1,16 +1,28 @@
 #! /root/anaconda3/bin/python
 
 
-def hi():
-    return "hi yasoob!"
+def a_new_decorator(a_func):
  
-def doSomethingBeforeHi(func):
-    print("I am doing some boring work before executing hi()")
-    print(func)				#<function hi at 0x7f0ea36a61f0>
-    print("func", func.__name__)	#hi
+    def wrapTheFunction():
+        print("I am doing some boring work before executing a_func()")
  
-doSomethingBeforeHi(hi)
+        a_func()
+ 
+        print("I am doing some boring work after executing a_func()")
+ 
+    return wrapTheFunction
+ 
+def a_function_requiring_decoration():
+    print("I am the function which needs some decoration to remove my foul smell")
+ 
+a_function_requiring_decoration()
+ 
+a_new_decorator(a_function_requiring_decoration)()
 
-print()
-print(hi.__name__)			#hi
-print(doSomethingBeforeHi.__name__)	#doSomethingBeforeHi	
+print(a_new_decorator(a_function_requiring_decoration).__name__)
+
+a_function_requiring_decoration = a_new_decorator(a_function_requiring_decoration)
+
+print(a_function_requiring_decoration.__name__)
+ 
+a_function_requiring_decoration()
