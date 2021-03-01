@@ -29,3 +29,7 @@ except Exception as err:
 # 例子三
 print(outer().__closure__)
 print(outer().__closure__[0].cell_contents)
+# 第一个外部包的变量
+# outer().__clousre__[0].cell_contents
+# 第二个外部包的变量
+# outer().__clousre__[1].cell_contents

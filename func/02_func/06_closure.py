@@ -4,6 +4,7 @@ def outer1():
     a = 10
 
     def inner():
+        #nonlocal a
         a = 11
         print('例子一 内函数:', a)
         '''
@@ -30,7 +31,7 @@ def outer2():
          print('例子二inner2:', a) 
 
      inner2()
-#     return inner2
+     # return inner2
 
 
 print()
@@ -40,7 +41,7 @@ try:
 except Exception as err:
     print("例子二__closure__, type(err):", type(err))
     print("例子二__closure__, err:", err)
-
+# print("例子二__closure__[0].cell_contents", outer2().__closure__[0].cell_contents)
 
 # 例子三
 def outer3():
