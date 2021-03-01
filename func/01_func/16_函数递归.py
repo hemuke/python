@@ -14,7 +14,7 @@ print(fac(6))
 print(fac.__doc__)
 
 
-def fib(n):
+def fib1(n):
     """ 
     求指定位置的斐波那切数列的值
     """
@@ -22,10 +22,10 @@ def fib(n):
         return 0
     if n == 1:
         return 1
-    return fib(n - 1) + fib(n - 2)
+    return fib1(n - 1) + fib1(n - 2)
 
 
-print(fib(6))
+print(fib1(6))
 
 
 def fib2(m):
