@@ -20,6 +20,7 @@ def a_function_requiring_decoration():
 print(a_function_requiring_decoration)
 print(a_function_requiring_decoration())
 print(a_function_requiring_decoration.__name__)
+print(a_new_decorator.__name__)
 print(a_new_decorator(a_function_requiring_decoration).__closure__)
 print(a_new_decorator(a_function_requiring_decoration).__closure__[0].cell_contents)
 #https://www.runoob.com/w3cnote/python-func-decorators.html

@@ -19,8 +19,8 @@ def log3(month, day):
 add3 = log3('6月', '18日')(add3)
 log3('6月', '18日') -----> return decorator 内存地址
 log3('6月', '18日')(add3) -----> return wrapper 内存地址
-log3('6月', '18日')(add3)(1,2) -----> return func(*args, **kwargs)
 """
+
 @log3('6月', '18日') 
 def add3(sum1, sum2):
     print(sum1, sum2)
