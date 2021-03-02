@@ -33,7 +33,7 @@ for i in range(1, 4):
     if i != j:
         for j in range(1, 4):
             L.append((i, j))
-print("例子四，方法一：", L)
+print("例子四，方法一 不对：", L)
 
 
 L = []
@@ -41,7 +41,10 @@ for i in range(1, 4):
     for j in range(1, 4):
         if i != j:
             L.append((i, j))
-print("例子四，方法二：", L)
+print("例子四，方法二 对：", L)
+
+L = [(i, j) for i in range(1, 4) for j in range(1, 4) if i != j]
+print("例子四，方法三 对：", L)
 print()
 ###########################################################################
 matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
