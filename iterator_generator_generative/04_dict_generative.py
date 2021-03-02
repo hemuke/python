@@ -10,7 +10,7 @@ from collections.abc import Iterator
 
 items = ['Fruits', 'Books', 'Others']
 prices = [96, 78, 83]
-i = zip(items, prices)
+i = zip(items, prices)          #迭代器
 print(i)			#<zip object at 0x7f826e1a3fc0>
 print(type(i))			#<class 'zip'>
 print(isinstance(i, Iterable))	#True
