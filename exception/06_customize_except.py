@@ -5,6 +5,9 @@ class MyException(Exception):
         self.msg1 = msg1
         self.msg2 = msg2
 
+
+print(MyException('Test1', 'Test2'))
+
 try:
     raise MyException("123", "abc")
 except Exception:
