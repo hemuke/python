@@ -5,6 +5,7 @@ class MyException(Exception):
         self.msg1 = msg1
         self.msg2 = msg2
 
+print(MyException('Test1', 'Test2').msg1, MyException('Test1', 'Test2').msg2)
 
 print(MyException('Test1', 'Test2'))
 
