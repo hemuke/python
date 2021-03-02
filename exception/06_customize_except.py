@@ -10,7 +10,7 @@ try:
 except Exception:
     print(Exception)
 
-print("ABC")
+print()
 
 
 try:

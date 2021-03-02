@@ -17,7 +17,7 @@ except ZeroDivisionError:
     print(ZeroDivisionError)
 ############################################
 try:
-    raise ZeroDivisionError('')
+    raise ZeroDivisionError('0不能作为除数')
 except ZeroDivisionError:
     raise ValueError('输入错误')
 ############################################
