@@ -1,5 +1,5 @@
 #! /root/anaconda3/bin/python
-
+import sys
 """
    如果一个类对象实现了特殊方法__enter__()和__exit__(),那么就称这个类对象遵守了上下文管理协议，这个类对象的实例对象被称为上下文管理器。
 """
@@ -32,4 +32,8 @@ try:
     with MyContextManager as mcm:
         mcm.do_sth()
 except Exception:
-     print(type(Exception))
+        ex_type, ex_value, ex_traceback = sys.exc_info()
+
+        print('异常的类型: %s' % ex_type)
+        print('异常的错误信息：%s' % ex_value)
+        print('异常调用堆栈的跟踪信息：%s' % ex_traceback)
