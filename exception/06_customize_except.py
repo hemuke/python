@@ -6,7 +6,7 @@ class MyException(Exception):
         self.msg2 = msg2
 
 print(MyException('Test1', 'Test2').msg1, MyException('Test1', 'Test2').msg2)
-
+# 这个Exception 本身实现了打印
 print(MyException('Test1', 'Test2'))
 
 try:
