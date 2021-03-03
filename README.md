@@ -1,2 +1,2 @@
 # python
-python基础语法
+python3.8基础语法
