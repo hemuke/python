@@ -14,7 +14,9 @@ def log2(func):
         return func(*args, **kwargs)
     return wrapper
 
-@log2 # add2 = log2(add2)
+@log2 
+# add2 = log2(add2)
+# add2(1, 3) = log2(add2)(1, 3)
 def add2(sum1, sum2):
     #print(sum1, sum2)
     return sum1 + sum2
