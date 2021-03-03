@@ -18,8 +18,8 @@ print(0x76)
 
 print(int(118))
 print(int(118.2))
-print(int('118'))
 
+print(int('118'))
 print(int('1111011', 2))
 print(int('0o166', 8))
 print(int('0x166', 16))
