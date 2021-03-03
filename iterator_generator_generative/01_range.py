@@ -7,7 +7,9 @@
 '''
 
 print(range(5))
-
+'''
+    @next(range(5))报错是因为class range 只定义了__iter__,但是没有__next__特殊方法
+'''
 print(list(range(5)))
 print(list(range(0, 5, 1)))
 
