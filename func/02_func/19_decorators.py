@@ -7,7 +7,9 @@ def log(func):
     return wrapper
 
 
-@log  # add = log(add)
+@log  
+# add = log(add)
+# add(1, 2) = log(add)(1, 2)
 def add(sum1, sum2):
     print(sum1, sum2)
     return sum1 + sum2
