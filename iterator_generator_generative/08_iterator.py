@@ -16,7 +16,7 @@ class MyIterator(object):
             self.data += 1
             return self.data
 
-
+print(MyIterator())
 for item in MyIterator():
      print(item)
 print(item)
