@@ -16,3 +16,5 @@ print(hi.__name__)			#hi
 print(doSomethingBeforeHi.__name__)	#doSomethingBeforeHi	
 
 #函数.__name__指的是这个脚本正在执行时候用的函数
+
+print(dir())
