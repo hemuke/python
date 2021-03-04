@@ -24,6 +24,8 @@ print(dict())
 ###########################################################
 print(dict.fromkeys(['name', 'age']))
 print(dict.fromkeys(('name', 'age')))
+print(dict.fromkeys({'name', 'age'}))
 
 print(dict.fromkeys(('name', 'age'), 'N/A'))
 print(dict.fromkeys(['name', 'age'], 'N/A'))
+print(dict.fromkeys({'name', 'age'}, 'N/A'))
