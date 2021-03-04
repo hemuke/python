@@ -1,4 +1,5 @@
 #! /root/anaconda3/bin/python
+# https://www.cnblogs.com/wilber2013/p/4641616.html
 from datetime import datetime
 print(datetime(2018, 8, 18, 18, 18, 18).strftime('%Y-%m-%d %H:%M:%S'))
 print(datetime(2019, 9, 19, 19, 19, 19).strftime('%Y-%m-%d %H:%M:%S'))
