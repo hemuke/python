@@ -10,3 +10,7 @@ print(datetime.datetime.now())
 print(datetime.datetime.now().weekday())
 
 print(mot[datetime.datetime.now().weekday()])
+
+L = [1, 2, 3, 4]
+print(min(L))
+print(max(L))
