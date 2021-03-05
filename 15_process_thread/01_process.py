@@ -1,11 +1,11 @@
 #! /root/anaconda3/bin/python
 import time
 import os
-import multiprocessing
+from multiprocessing import current_process
 
-print(multiprocessing.current_process().pid)
+print(current_process().pid)
 
-print(os.getpid())
+print(os.getpid().pid)
 
 print(os.getppid())
 
