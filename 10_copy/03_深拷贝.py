@@ -28,6 +28,7 @@ print(id(L1) == id(L2))				# False
 print(id(L1[0]) == id(L2[0]))			# False
 print(id(L1[0][0]) == id(L2[0][0]))		# True
 print(id(L1[0][1]) == id(L2[0][1]))		# True
+print(id(L1[1]) == id(L2[1]))			# True
 L1[0][0] = 4
 print(L1, L2)					# [[4, 6], 8] [[3, 6], 8]
 L1[0][1] = 4
