@@ -26,7 +26,7 @@ print()
 """
 t3 = ([1, 2], 3, 4)
 t4 = copy.copy(t3)
-print(id(t3) == id(t4))
-print(id(t3[0]) == id(t4[0]))
+print(id(t3) == id(t4))		#True
+print(id(t3[0]) == id(t4[0]))	#True
 t3[0][0] = 2
 print(t3, t4)
