@@ -7,6 +7,7 @@ class MyIterator(object):
         self.data = 0
 
     def __iter__(self):
+        print('我是self', self) # 我是self <__main__.MyIterator object at 0x7f037b996610>
         return self
  
     def __next__(self):
@@ -16,7 +17,7 @@ class MyIterator(object):
             self.data += 1
             return self.data
 
-print(MyIterator())
+print('我是MyIterator()', MyIterator()) # 我是MyIterator() <__main__.MyIterator object at 0x7f037b996610> 
 for item in MyIterator():
      print(item)
 print(item)
