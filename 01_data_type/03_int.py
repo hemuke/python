@@ -17,6 +17,7 @@ print(0o166)
 print(0x76)
 
 print(int(118))
+print(int('118'))
 print(int(118.2))
 
 print(int('118'))
