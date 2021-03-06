@@ -31,3 +31,7 @@ print(list(zip(*zip(x, y))))
 x2, y2 = zip(*zip(x, y))
 print(list(x2))
 print(list(y2))
+
+dicta = {'a': 'aa', 'b': 'bb'}
+dictb = zip(dicta.values(), dicta.keys())
+print(dict(dictb))
