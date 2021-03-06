@@ -5,17 +5,17 @@ print(numbers[names.index('张三')])
 
 ###########################################################
 
-phonebook = {'张三':'13333333', 
-             '李四':'14444444',
-             '王五':'15555555',
-             '赵六':'16666666'}
+phonebook = {'张三': '13333333',
+             '李四': '14444444',
+             '王五': '15555555',
+             '赵六': '16666666'}
 print(phonebook['张三'])
 
 print({'name': 'Jack', 'age': 18})
 print({})
 
 print(dict({'name': 'jack', 'age': 18}))
-print(dict(name = 'jack', age = 18))
+print(dict(name='jack', age=18))
 print(dict([('name', 'jack'), ('age', 18)]))
 print(dict(zip(range(3), 'ABC')))
 

@@ -11,4 +11,4 @@ except ValueError:
     print(ValueError)
 
 print(L.index(7, 3))
-#list不能只指定结束索引
+# list不能只指定结束索引

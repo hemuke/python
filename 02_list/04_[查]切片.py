@@ -29,9 +29,9 @@ print(L[::])
 print(L[slice(None, None, None)])
 
 print(L[1:7])
-print(L[slice(1,7)])
-print(L[slice(1,7,None)])
+print(L[slice(1, 7)])
+print(L[slice(1, 7, None)])
 
 print(L[:7])
 print(L[slice(7)])
-print(L[slice(None,7,None)])
+print(L[slice(None, 7, None)])

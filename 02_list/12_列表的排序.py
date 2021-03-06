@@ -1,7 +1,6 @@
 #! /root/anaconda3/bin/python
-L = [5, 3, 8, 1, 6]
+L = sorted([5, 3, 8, 1, 6])
 
-L.sort()
 print(L)
 
 L.sort(reverse=True)
@@ -14,5 +13,5 @@ L = [5, 3, 8, 1, 6]
 print(sorted(L))
 print(L)
 
-print(sorted(L, reverse = True))
+print(sorted(L, reverse=True))
 print(L)

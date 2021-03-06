@@ -1,10 +1,10 @@
 #! /root/anaconda3/bin/python
 import sys
 
-print(sys.getsizeof(0))         #24
-print(sys.getsizeof(2 ** 0))	#28
-print(sys.getsizeof(2 ** 30))   #32
-print(sys.getsizeof(2 ** 60))   #36
+print(sys.getsizeof(0))  # 24
+print(sys.getsizeof(2 ** 0))  # 28
+print(sys.getsizeof(2 ** 30))  # 32
+print(sys.getsizeof(2 ** 60))  # 36
 
 
 print(bin(118))

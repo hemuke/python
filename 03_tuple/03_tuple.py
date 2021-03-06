@@ -15,4 +15,4 @@ print(a, b, c)
 print(a, b, c)
 
 a, *b, c = 1, 2, 3, 4
-print(a, b ,c)
+print(a, b, c)
