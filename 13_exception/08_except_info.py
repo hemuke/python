@@ -24,15 +24,17 @@
 import sys
 import traceback
 
+
 def f1():
     print(1 / 0)
+
 
 def f2():
     try:
         f1()
     except ZeroDivisionError:
         ex_type, ex_value, ex_traceback = sys.exc_info()
-        
+
         print('异常的类型: %s' % ex_type)
         print('异常的错误信息：%s' % ex_value)
         print('异常调用堆栈的跟踪信息：%s' % ex_traceback)
@@ -45,4 +47,6 @@ def f2():
             print('行数：%s' % linenum)
             print('函数名：%s' % funcname)
             print('源码：%s' % source)
+
+
 f2()

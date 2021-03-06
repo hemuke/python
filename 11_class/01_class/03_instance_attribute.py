@@ -7,13 +7,16 @@
         语法格式:实例对象.属性名
 """
 # 例子1
+
+
 class MyClass1(object):
-    
+
     def __init__(self):
         self.ia1 = 1
 
     def do_sth1(self):
         print(self.ia1)
+
 
 mc = MyClass1()
 print(mc.ia1)
@@ -21,13 +24,17 @@ mc.do_sth1()
 print()
 
 # 例子2
+
+
 class MyClass2(object):
-   
+
     def do_another(self):
         self.ia2 = 2
 
     def do_sth2(self):
         print(self.ia2)
+
+
 try:
     MyClass2().do_sth2()
 except Exception:
@@ -49,6 +56,7 @@ class MyClass3(object):
     def do_sth3(self):
         print(self.ia3)
 
+
 mc = MyClass3()
 mc.ia3 = 3
 print(mc.ia3)
@@ -66,10 +74,13 @@ except AttributeError:
     print(AttributeError)
 
 # 例子四
+
+
 class Student(object):
     def __init__(self, name, score):
         self.name = name
-        self.score =score
+        self.score = score
+
 
 s1 = Student('张三', 98)
 s2 = Student('李四', 86)

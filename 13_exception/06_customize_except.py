@@ -5,6 +5,7 @@ class MyException(Exception):
         self.msg1 = msg1
         self.msg2 = msg2
 
+
 print(MyException('Test1', 'Test2').msg1, MyException('Test1', 'Test2').msg2)
 # 这个Exception 本身实现了打印
 print(MyException('Test1', 'Test2'))
@@ -26,11 +27,12 @@ my = MyException("a", "b")
 print(my)
 
 
-################################################################################
+##########################################################################
 class MyException2(object):
     def __init__(self, msg1, msg2):
-       self.msg1 = msg1
-       self.msg2 = msg2
+        self.msg1 = msg1
+        self.msg2 = msg2
+
 
 print(MyException2("MyException2-1", "MyException2-2").msg1)
 print(MyException2("MyException2-1", "MyException2-2"))

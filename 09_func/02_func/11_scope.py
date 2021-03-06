@@ -12,6 +12,8 @@ f1()
 print(g)
 
 # 例子二
+
+
 def f2():
     g[0] = 2
     print(g)

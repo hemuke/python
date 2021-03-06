@@ -6,7 +6,8 @@ while i < 11:
 
 while True:
     word = input('请输入一个单词：')
-    if not word: break
+    if not word:
+        break
     print('输入的单词是：', world)
 
 for number in range(1, 4):
@@ -15,9 +16,8 @@ for number in range(1, 4):
 for _ in range(1, 4):
     print('Hello')
 
-for number in [1, 2 ,3]:
+for number in [1, 2, 3]:
     print(number)
 
 for char in '123':
     print(char)
-

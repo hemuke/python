@@ -21,7 +21,7 @@ print()
 L = []
 for i in range(1, 4):
     for j in range(1, 4):
-         L.append((i, j))
+        L.append((i, j))
 print("例子三，方法一：", L)
 
 L = [(i, j) for i in range(1, 4) for j in range(1, 4)]
@@ -53,7 +53,7 @@ s = []
 for i in range(4):
     L = []
     for j in matrix:
-         L.append(j[i])
+        L.append(j[i])
     s.append(L)
 print("例子五，方法一：", s)
 

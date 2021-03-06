@@ -7,7 +7,6 @@ with open('myfile4.txt', 'w') as file:
     print(file.tell())
 
 
-
 with open('myfile.txt', 'a') as file:
     print(file.tell())
 
@@ -22,11 +21,11 @@ hello
 world
 '''
 with open('myfile.txt', 'r') as file:
-    print(file.tell()) 
+    print(file.tell())
 
     print(file.read(3))
     print(file.tell())
-    
+
     print(file.readline())
     print(file.tell())
 

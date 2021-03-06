@@ -13,7 +13,7 @@ except ValueError:
     print("值错误")
 except Exception as err:
     print(type(err))
-print("结束") 
+print("结束")
 
 ######################################################
 
@@ -54,12 +54,12 @@ except ValueError:
     print("运行出错了")
 
 try:
-   result = 1 / 0
-   print(result)
+    result = 1 / 0
+    print(result)
 except (TypeError, ZeroDivisionError, ValueError) as err:
-   print(type(err))
-   print(err)
-#except (TypeError, ZeroDivisionError, ValueError):
+    print(type(err))
+    print(err)
+# except (TypeError, ZeroDivisionError, ValueError):
 #   print(ZeroDivisionError)
 
 ######################################################

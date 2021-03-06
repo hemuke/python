@@ -15,92 +15,85 @@
 """
 
 
+import copy
 print("第一组信息")
 L1 = [[3, 6], 8]
 L2 = L1[:]
-print(id(L1) == id(L2))				#False
-print(id(L1[0]) == id(L2[0]))			#True
-print(id(L1[1]) == id(L2[1]))			#True
-print(id(L1[0][0]) == id(L2[0][0]))		#True
-print(id(L1[0][1]) == id(L2[0][1]))		#True
+print(id(L1) == id(L2))  # False
+print(id(L1[0]) == id(L2[0]))  # True
+print(id(L1[1]) == id(L2[1]))  # True
+print(id(L1[0][0]) == id(L2[0][0]))  # True
+print(id(L1[0][1]) == id(L2[0][1]))  # True
 L1[0][0] = 4
-print(L1, L2)					#[[4, 6], 8] [[4, 6], 8]
-L1[1] = 7					
-print(L1, L2)					#[[4, 6], 7] [[4, 6], 8]
+print(L1, L2)  # [[4, 6], 8] [[4, 6], 8]
+L1[1] = 7
+print(L1, L2)  # [[4, 6], 7] [[4, 6], 8]
 print()
-
 
 
 print("第二组信息")
 L1 = [[3, 6], 8]
 L2 = L1.copy()
-print(id(L1) == id(L2))				#False
-print(id(L1[0]) == id(L2[0]))			#True
-print(id(L1[1]) == id(L2[1]))			#True
-print(id(L1[0][0]) == id(L2[0][0]))		#True
-print(id(L1[0][1]) == id(L2[0][1]))		#True
+print(id(L1) == id(L2))  # False
+print(id(L1[0]) == id(L2[0]))  # True
+print(id(L1[1]) == id(L2[1]))  # True
+print(id(L1[0][0]) == id(L2[0][0]))  # True
+print(id(L1[0][1]) == id(L2[0][1]))  # True
 L1[0][0] = 4
-print(L1, L2)					#[[4, 6], 8] [[4, 6], 8]
-L1[1] = 7					
-print(L1, L2)					#[[4, 6], 7] [[4, 6], 8]
+print(L1, L2)  # [[4, 6], 8] [[4, 6], 8]
+L1[1] = 7
+print(L1, L2)  # [[4, 6], 7] [[4, 6], 8]
 print()
-
 
 
 print("第三组信息")
 L1 = [[3, 6], 8]
 L2 = list(L1)
-print(id(L1) == id(L2))				#False
-print(id(L1[0]) == id(L2[0]))			#True
-print(id(L1[1]) == id(L2[1]))			#True
-print(id(L1[0][0]) == id(L2[0][0]))		#True
-print(id(L1[0][1]) == id(L2[0][1]))		#True
+print(id(L1) == id(L2))  # False
+print(id(L1[0]) == id(L2[0]))  # True
+print(id(L1[1]) == id(L2[1]))  # True
+print(id(L1[0][0]) == id(L2[0][0]))  # True
+print(id(L1[0][1]) == id(L2[0][1]))  # True
 L1[0][0] = 4
-print(L1, L2)					#[[4, 6], 8] [[4, 6], 8]
-L1[1] = 7					
-print(L1, L2)					#[[4, 6], 7] [[4, 6], 8]
+print(L1, L2)  # [[4, 6], 8] [[4, 6], 8]
+L1[1] = 7
+print(L1, L2)  # [[4, 6], 7] [[4, 6], 8]
 print()
-
 
 
 print("第四组信息")
-import copy
 L1 = [[3, 6], 8]
 L2 = copy.copy(L1)
-print(id(L1) == id(L2))				#False
-print(id(L1[0]) == id(L2[0]))			#True
-print(id(L1[1]) == id(L2[1]))			#True
-print(id(L1[0][0]) == id(L2[0][0]))		#True
-print(id(L1[0][1]) == id(L2[0][1]))		#True
+print(id(L1) == id(L2))  # False
+print(id(L1[0]) == id(L2[0]))  # True
+print(id(L1[1]) == id(L2[1]))  # True
+print(id(L1[0][0]) == id(L2[0][0]))  # True
+print(id(L1[0][1]) == id(L2[0][1]))  # True
 L1[0][0] = 4
-print(L1, L2)					#[[4, 6], 8] [[4, 6], 8]
-L1[1] = 7					
-print(L1, L2)					#[[4, 6], 7] [[4, 6], 8]
+print(L1, L2)  # [[4, 6], 8] [[4, 6], 8]
+L1[1] = 7
+print(L1, L2)  # [[4, 6], 7] [[4, 6], 8]
 print()
-
-
 
 
 print("第五组信息")
-import copy
 L1 = [[3, 6], {7, 8}]
 L2 = copy.copy(L1)
-print(id(L1) == id(L2))				#False
-print(id(L1[0]) == id(L2[0]))			#True
-print(id(L1[1]) == id(L2[1]))			#True
-print(id(L1[0][0]) == id(L2[0][0]))		#True
-print(id(L1[0][1]) == id(L2[0][1]))		#True
+print(id(L1) == id(L2))  # False
+print(id(L1[0]) == id(L2[0]))  # True
+print(id(L1[1]) == id(L2[1]))  # True
+print(id(L1[0][0]) == id(L2[0][0]))  # True
+print(id(L1[0][1]) == id(L2[0][1]))  # True
 L1[0][0] = 4
-print(L1, L2)					#[[4, 6], {8, 7}] [[4, 6], {8, 7}]	
-L1[1].add(9)					
-print(L1, L2)					#[[4, 6], {8, 9, 7}] [[4, 6], {8, 9, 7}]
+print(L1, L2)  # [[4, 6], {8, 7}] [[4, 6], {8, 7}]
+L1[1].add(9)
+print(L1, L2)  # [[4, 6], {8, 9, 7}] [[4, 6], {8, 9, 7}]
 print()
-
 
 
 print("第六组信息")
 L1 = [[3, 6], {7, 8}]
 L2 = copy.copy(L1)
 L1[1] = 7
-print(L1, L2)					#[[3, 6], 7] [[3, 6], {8, 7}]
+print(L1, L2)  # [[3, 6], 7] [[3, 6], {8, 7}]
 print()

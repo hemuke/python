@@ -1,6 +1,8 @@
 #! /root/anaconda3/bin/python
 class Dog(object):
     pass
+
+
 '''
 不需要传参的情况
 '''
@@ -13,10 +15,13 @@ print(Dog)
 print()
 
 ##########################################################
+
+
 class Cat(object):
     def __init__(self):
         print("self", self)
         self.animal = '猫'
+
 
 print(Cat().animal)
 print()

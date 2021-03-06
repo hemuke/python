@@ -17,6 +17,7 @@ def classify_number(numbers):
 
     return odds, evens
 
+
 print(classify_number([1, 2, 3, 4, 5]))
 
 
@@ -28,7 +29,7 @@ print(classify_number([1, 2, 3, 4, 5]))
 
 def lookup_min_max(numbers):
     if len(numbers) == 0:
-        return 
+        return
 
     min_num = numbers[0]
     max_num = numbers[0]

@@ -8,6 +8,7 @@ class MyClass(object):
     def do_another(self):
         print(MyClass.cal2)
 
+
 mc = MyClass()
 
 mc.do_sth()

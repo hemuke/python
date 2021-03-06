@@ -12,7 +12,6 @@ f1()
 print(g)
 
 
-
 # 例子二
 def f2():
     global g

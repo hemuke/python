@@ -17,7 +17,6 @@ def outside():
 outside()
 
 
-
 # 例子二
 i = 11
 

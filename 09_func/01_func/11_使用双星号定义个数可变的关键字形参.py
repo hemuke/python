@@ -17,8 +17,8 @@ def sorted(*args, **kwargs):
 
 L = ['Python', 'Java', 'Swift']
 print(sorted(L))
-print(sorted(L, key = len))
-print(sorted(L, key = len, reverse=True))
+print(sorted(L, key=len))
+print(sorted(L, key=len, reverse=True))
 
 
 def fun(*args, **kwargs):

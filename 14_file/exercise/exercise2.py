@@ -20,16 +20,19 @@ with open('name.txt', encoding='utf-8') as f:
 
 weapon_dict = {}
 with open('weapon.txt', encoding='utf-8') as f:
-        i = 1
-        for line in f:
-             if i%2 == 1:
-                weapon_name, weapon_number = find_main_charecters(line.strip())
-                weapon_dict[weapon_name] = weapon_number
-             i = i+1
+    i = 1
+    for line in f:
+        if i % 2 == 1:
+            weapon_name, weapon_number = find_main_charecters(line.strip())
+            weapon_dict[weapon_name] = weapon_number
+        i = i + 1
 
 
 name_sorted = sorted(name_dict.items(), key=lambda item: item[1], reverse=True)
 print(name_sorted[0:10])
 
-weapon_sorted = sorted(weapon_dict.items(), key=lambda item: item[1], reverse=True)
+weapon_sorted = sorted(
+    weapon_dict.items(),
+    key=lambda item: item[1],
+    reverse=True)
 print(weapon_sorted[0:10])

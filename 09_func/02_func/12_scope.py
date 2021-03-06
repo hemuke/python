@@ -14,7 +14,7 @@ print(item)
 # 例子三
 try:
     result = 5
-except:
+except BaseException:
     pass
 
 print(result)

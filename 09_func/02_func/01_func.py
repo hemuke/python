@@ -11,10 +11,16 @@ print(f(1, 2))
 print((lambda num1, num2: num1 + num2)(3, 4))
 
 # 例子三
-le = lambda num1, num2: num1 + num2
+
+
+def le(num1, num2): return num1 + num2
+
+
 print(le(5, 6))
 
 # 例子四
+
+
 def eval_enum(x):
     return x * x
 
@@ -22,6 +28,8 @@ def eval_enum(x):
 print(list(map(eval_enum, [1, 2, 3])))
 
 # 例子五
+
+
 def do_sth():
     return add
 
@@ -29,6 +37,8 @@ def do_sth():
 print(do_sth()(7, 8))
 
 # 例子六
+
+
 def outer():
     def inner():
         print("This is inner.")

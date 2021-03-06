@@ -17,7 +17,6 @@ except Exception as err:
     print(err)
 
 
-
 def fun(*args):
     print("args = {}".format(args))
 

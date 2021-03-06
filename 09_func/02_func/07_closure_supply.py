@@ -5,6 +5,7 @@ def make_adder(addend):
         return augend + addend
     return adder
 
+
 p = make_adder(23)
 q = make_adder(44)
 

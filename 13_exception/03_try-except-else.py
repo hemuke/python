@@ -14,7 +14,7 @@ print("结束")
 
 ############################################
 
-#while True:
+# while True:
 #    try:
 #        x = int(input("请输入一个整数："))
 #    except ValueError:

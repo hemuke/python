@@ -3,6 +3,8 @@
 """
    如果一个类对象实现了特殊方法__enter__()和__exit__(),那么就称这个类对象遵守了上下文管理协议，这个类对象的实例对象被称为上下文管理器。
 """
+
+
 class MyContextManager(object):
     def __enter__(self):
         print("特殊方法__enter__()被调用了")
@@ -16,7 +18,7 @@ class MyContextManager(object):
 
 
 with MyContextManager() as mcm:
-    mcm.do_sth() 
+    mcm.do_sth()
 
 """
 1）计算上下文表达式MyContextManager() 返回这个上下文管理器 并创建运行这个上下文

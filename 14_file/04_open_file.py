@@ -1,6 +1,6 @@
 #! /root/anaconda3/bin/python
 """
-(base) [root@k8s-ansible file]# cat myfile.txt 
+(base) [root@k8s-ansible file]# cat myfile.txt
 1234567890
 abcdefghijklmn
 opqrstuvwxyz

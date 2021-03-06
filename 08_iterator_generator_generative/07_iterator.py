@@ -15,7 +15,7 @@ print(isinstance((i * i for i in range(1, 7)), Iterable))
      @对于range、列表、元组、字符串、字典和集合等可迭代对象，都不可以作为内置函数next()的实参，而生成器可以。所以，生成器是迭代器的一种。
 """
 L = [1, 2, 3]
-# next(L) 
+# next(L)
 s = 'abc'
 # next(s)
 t = (1, 2, 3)

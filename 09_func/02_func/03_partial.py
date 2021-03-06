@@ -2,6 +2,8 @@
 from functools import partial
 
 # 例子一
+
+
 def f(a, b=5):
     print("a: {}, b: {}".format(a, b))
 
