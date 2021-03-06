@@ -1,8 +1,8 @@
 #! /root/anaconda3/bin/python
+import keyword
 print('abc'.isidentifier())
 print('123'.isidentifier())
 
-import keyword
 print(keyword.iskeyword('if'))
 print(keyword.iskeyword('iF'))
 

@@ -8,7 +8,7 @@ book = '<<数据结构与算法>>'
 print('买了一本书: %s' % book)
 
 price = 68.88
-print('花了%f, 买了一本书: %s' %(price, book))
+print('花了%f, 买了一本书: %s' % (price, book))
 
 print('我的工作已经完成了%d%%' % 80)
 

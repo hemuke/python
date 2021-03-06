@@ -13,14 +13,14 @@ print(''.join(a))
 # 字符串的排序
 s = 'DBeFac'
 print(sorted(s))
-print(sorted(s, reverse = True))
+print(sorted(s, reverse=True))
 
-print(sorted(s, key = str.lower))
+print(sorted(s, key=str.lower))
 
-#列表
+# 列表
 L = ['Python', 'Java', 'Swift']
-L.sort(key = len)
+L.sort(key=len)
 print(L)
 
-L.sort(key = str.lower)
+L.sort(key=str.lower)
 print(L)

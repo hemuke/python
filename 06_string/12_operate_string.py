@@ -5,6 +5,6 @@ print(s.rstrip())
 print(s.strip())
 
 s = 'www.example.com'
-print(s.lstrip('comwz.')) 
-print(s.rstrip('comwz.')) 
-print(s.strip('comwz.')) 
+print(s.lstrip('comwz.'))
+print(s.rstrip('comwz.'))
+print(s.strip('comwz.'))

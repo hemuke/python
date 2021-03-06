@@ -8,8 +8,8 @@ print(s.split(sep="|"))
 print(s.rsplit(sep="|"))
 
 s = "Python	Swift	Kotlin	Java"
-print(s.split(maxsplit = 2))
-print(s.rsplit(maxsplit = 2))
+print(s.split(maxsplit=2))
+print(s.rsplit(maxsplit=2))
 
 s = "Hello-World-!"
 print(s.partition('-'))
