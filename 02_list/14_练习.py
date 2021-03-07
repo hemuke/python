@@ -11,6 +11,9 @@ print(datetime.datetime.now().weekday())
 
 print(mot[datetime.datetime.now().weekday()])
 
-L = [1, 2, 3, 4]
+
+# 常用函数
+L = [1, 2, 3, 4, 4, 4, 4, 4, 4]
 print(min(L))
 print(max(L))
+print(L.count(4))
