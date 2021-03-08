@@ -17,6 +17,7 @@ class Fib(object):
             raise StopIteration()
         return self.a
 
-
+print(Fib)
+print(Fib())
 for item in Fib():
     print(item)
