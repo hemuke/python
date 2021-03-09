@@ -14,5 +14,11 @@ print(re.compile('\\d').match('8'))
 print(re.match(r'a\\b', 'a\\b'))
 print(re.compile(r'a\\b').match('a\\b'))
 
+"""
+在普通字符串里面每个\的本意都要用两个\\代替。
+"""
 print(re.match('a\\\\b', 'a\\b'))
 print(re.compile('a\\\\b').match('a\\b'))
+
+print(re.match(r'\[abc\]', '[abc]'))
+print(re.match('\[abc\]', '[abc]'))
