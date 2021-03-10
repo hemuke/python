@@ -5,7 +5,7 @@ from multiprocessing import current_process
 
 print(current_process().pid)
 
-print(os.getpid().pid)
+print(os.getpid())
 
 print(os.getppid())
 
