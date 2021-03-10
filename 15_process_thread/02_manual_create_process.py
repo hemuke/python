@@ -24,6 +24,38 @@ process.start()
 time.sleep(200)
 print('父进程结束(%d--%s)' % (current_process().pid, current_process().name))
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 """
 class Process(process.BaseProcess):
     _start_method = None
