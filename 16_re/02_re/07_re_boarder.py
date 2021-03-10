@@ -24,3 +24,13 @@ print(re.findall(r'\d+\Z', '12=3\n45-6\n78-9'))
 print(re.findall(r'\d+\Z', '12=3\n45-6\n78-9\n'))
 
 print(re.match(r'.......', 'a\nb\nc\nd', re.S))
+
+print(re.match(r'.......', 'a\nb\nc\nd'))
+
+print(re.match(r'.......', 'a\nb\nc\nd', re.M))
+
+print(re.findall(r'.......', 'a\nb\nc\nd', re.S))
+
+print(re.findall(r'.......', 'a\nb\nc\nd'))
+
+print(re.findall(r'.......', 'a\nb\nc\nd', re.M))
