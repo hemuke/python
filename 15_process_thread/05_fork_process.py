@@ -1,0 +1,16 @@
+#! /root/anaconda3/bin/python
+import os
+import time
+
+try:
+    pid = os.fork()
+except OSError:
+    print('你的操作系统不支持调用函数fork()')
+    exit()
+
+if pid < 0:
+    print('复制子进程失败')
+elif pid == 0:
+    print('我是子进程%d,我的父进程是%d' % (os.getpid(), os.getppid()))
+else:
+    print('我是父进程%d,我的子进程是%d' % (os.getpid(), pid))
