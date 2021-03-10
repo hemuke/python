@@ -9,8 +9,8 @@ print('父进程启动{}--{}'.format(current_process().pid, current_process().na
 class MyProcess(Process):
 
     def __init__(self, name, args):
-        super().__init__(name=name, self.args=args)
-        # self.args = args
+        super().__init__(name=name)
+        self.args = args
 
     def run(self):
         print('子进程启动{}--{}'.format(current_process().pid, current_process().name))
