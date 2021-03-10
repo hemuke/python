@@ -9,4 +9,4 @@ print(os.getpid())
 
 print(os.getppid())
 
-time.sleep(20)
+time.sleep(2)
