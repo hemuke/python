@@ -15,9 +15,9 @@ print(match_obj.group(2))		# 345
 print(match_obj.group('sec'))		# 345
 print(match_obj.group())		# 25-345
 print(match_obj.group(0))		# 25-345
-print(match_obj.group(1, 'sec'))	# ('25', '345')
+print(match_obj.group(1, 'sec'))  # ('25', '345')
 
-print(match_obj.groups())		# ('25', '345') 		
+print(match_obj.groups())		# ('25', '345')
 print(match_obj.groupdict())		# {'sec': '345'}
 
 print(match_obj.start('sec'))		# 4
