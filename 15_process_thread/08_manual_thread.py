@@ -8,14 +8,15 @@ print('父线程%s启动' % current_thread().getName())
 
 class MyThread(Thread):
 
-    def __init__(self, name, args):
+    def __init__(self, name, **kwargs):
         super().__init__(name=name)
-        self.args = args
+        self.kwargs = kwargs
 
     def run(self):
         print('子线程%s启动' % current_thread().getName())
-        time.sleep(20)
-        print('arg1 = %d, arg2 = %d' % self.args)
+        time.sleep(5)
+        # print('arg1 = %d, arg2 = %d' % self.args)
+        print('arg1 = %d, arg2 = %d' % (self.kwargs['kwargs']['arg1'], self.kwargs['kwargs']['arg2']))
         print('子线程%s结束' % current_thread().getName())
 
 
@@ -23,4 +24,4 @@ class MyThread(Thread):
 mt = MyThread(name='mythread', kwargs={'arg1': 5, 'arg2': 8})
 mt.start()
 
-time.sleep(25)
+time.sleep(5)

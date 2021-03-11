@@ -8,7 +8,7 @@ print('父线程%s启动' % current_thread().getName())
 
 def do_sth(arg1, arg2):
     print('子线程%s启动' % current_thread().getName())
-    time.sleep(20)
+    time.sleep(5)
     print('arg1 = %d, arg2 = %d' % (arg1, arg2))
     print('子线程%s结束' % current_thread().getName())
 
@@ -17,4 +17,4 @@ def do_sth(arg1, arg2):
 process = Thread(target=do_sth, kwargs={'arg1': 5, 'arg2': 8})
 process.start()
 
-time.sleep(25)
+time.sleep(5)
