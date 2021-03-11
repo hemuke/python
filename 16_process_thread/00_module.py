@@ -19,3 +19,4 @@ if __name__ == '__main__':
     info('main line')
     p = Process(target=f, args=('bob',))
     p.start()
+    p.join()

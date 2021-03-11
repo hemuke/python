@@ -17,6 +17,7 @@ if __name__ == "__main__":
             current_process().name))
     process = Process(target=do_sth, args=(5, 8))
     process.start()
+    process.join()
     time.sleep(5)
     print(
         '结束父进程pid:{}, name:{}'.format(
