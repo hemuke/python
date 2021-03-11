@@ -21,7 +21,7 @@ def do_sth(arg1, arg2):
 
 process = Process(target=do_sth, args=(5, 8))
 process.start()
-time.sleep(200)
+time.sleep(20)
 print('父进程结束(%d--%s)' % (current_process().pid, current_process().name))
 
 
