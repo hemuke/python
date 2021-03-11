@@ -1,5 +1,6 @@
 #! /root/anaconda3/bin/python
 from multiprocessing import Process
+from multiprocessing import current_process
 import os
 
 
@@ -20,3 +21,4 @@ if __name__ == '__main__':
     p = Process(target=f, args=('bob',))
     p.start()
     p.join()
+    print("父进程%d结束" % current_process().pid)
