@@ -16,7 +16,10 @@ class MyThread(Thread):
         print('子线程%s启动' % current_thread().getName())
         time.sleep(5)
         # print('arg1 = %d, arg2 = %d' % self.args)
-        print('arg1 = %d, arg2 = %d' % (self.kwargs['kwargs']['arg1'], self.kwargs['kwargs']['arg2']))
+        print(
+            'arg1 = %d, arg2 = %d' %
+            (self.kwargs['kwargs']['arg1'],
+             self.kwargs['kwargs']['arg2']))
         print('子线程%s结束' % current_thread().getName())
 
 

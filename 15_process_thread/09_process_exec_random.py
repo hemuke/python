@@ -3,16 +3,23 @@ from multiprocessing import Process, current_process
 import time
 import os
 
+
 def do_sth():
     for i in range(5):
-        print('进程 %s---%d---%d---%d' % (current_process().name, current_process().pid, os.getppid(), i))
+        print(
+            '进程 %s---%d---%d---%d' %
+            (current_process().name,
+             current_process().pid,
+             os.getppid(),
+             i))
         time.sleep(1)
 
+
 for i in range(3):
-     # print('进程cc %s---%d' % (current_process().name, current_process().pid))
-     process = Process(target=do_sth)
-     process.start()
-     print()
+    # print('进程cc %s---%d' % (current_process().name, current_process().pid))
+    process = Process(target=do_sth)
+    process.start()
+    print()
 
 do_sth()
 """
