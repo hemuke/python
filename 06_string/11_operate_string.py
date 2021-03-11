@@ -1,18 +1,33 @@
 #! /root/anaconda3/bin/python
-import keyword
-print('abc'.isidentifier())
-print('123'.isidentifier())
+s = "Python	Swift	Kotlin"
+print(s.split())
+print(s.rsplit())
 
-print(keyword.iskeyword('if'))
-print(keyword.iskeyword('iF'))
+s = "Python|Swift|Kotlin"
+print(s.split(sep="|"))
+print(s.rsplit(sep="|"))
 
-print('\t  \r 	\n'.isspace())
+s = "Python	Swift	Kotlin	Java"
+print(s.split(maxsplit=2))
+print(s.rsplit(maxsplit=2))
 
-print('abc'.isalpha())
-print('abc1'.isalpha())
+s = "Hello-World-!"
+print(s.partition('-'))
+print(s.rpartition('-'))
 
-print('123'.isdecimal())
-print('123六VI'.isdecimal())
+s = "HelloWorld-!"
+print(s.partition('-'))
+print(s.rpartition('-'))
 
-print('123六VI'.isnumeric())
-print('123六VIa'.isnumeric())
+s = "HelloWorld"
+print(s.partition('-'))
+print(s.rpartition('-'))
+
+s = '|'.join(['Python', 'Swift', 'Kotlin'])
+print(s)
+
+s = ''.join(['Python', 'Swift', 'Kotlin'])
+print(s)
+
+s = '|'.join('Python')
+print(s)
