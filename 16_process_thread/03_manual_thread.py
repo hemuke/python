@@ -3,6 +3,7 @@ import time
 from threading import Thread
 from threading import current_thread
 
+
 def do_sth(arg1, arg2):
     print('子线程%s启动' % current_thread().getName())
     time.sleep(5)
