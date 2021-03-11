@@ -21,4 +21,4 @@ if __name__ == '__main__':
     p = Process(target=f, args=('bob',))
     p.start()
     p.join()
-    print("父进程%d结束" % current_process().pid)
+    print("hello父进程%d结束" % current_process().pid)
