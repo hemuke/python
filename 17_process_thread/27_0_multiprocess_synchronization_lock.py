@@ -1,0 +1,44 @@
+from multiprocessing import Process
+from multiprocessing import Lock
+from multiprocessing import Value
+import time
+
+start = time.time()
+num = Value('i', 0)
+
+#######################################
+#为了保证数据的一致性                 #
+#创建multiprocessing属性Lock的实例对象#
+#######################################
+lock = Lock()
+
+
+def do_sth():
+    global num
+    for i in range(1000000):
+        """
+        # 上锁
+        lock.acquire()
+        try:
+            num.value += 1
+        finally:
+        # 解锁
+            lock.release()
+        """
+        with lock:
+            num.value += 1
+        # 由于类对象Lock遵守了上下文管理协议，所以可以使用with语句进行简化。这样，在进入运行时上下文时自动调用方法acquire(),在离开运行时上下文时会自动调用方法release()
+
+
+t1 = Process(target=do_sth)
+t2 = Process(target=do_sth)
+
+t1.start()
+t2.start()
+
+t1.join()
+t2.join()
+
+stop = time.time()
+print("结束问题{}".format(stop - start))
+print(num)

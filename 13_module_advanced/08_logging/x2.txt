@@ -1,0 +1,5 @@
+2021-03-22 17:40:32 - root - ERROR -03_logging:  Traceback (most recent call last):
+  File "03_logging.py", line 22, in <module>
+    print(1/0)
+ZeroDivisionError: division by zero
+

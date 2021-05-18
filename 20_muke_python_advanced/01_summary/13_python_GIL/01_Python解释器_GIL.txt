@@ -1,0 +1,57 @@
+编译性语言 C/C++ Object-C Golang
+解释性语言 Python Php Javascript
+解释器 Pypy Jpython Ironpython cpython
+
+GIL锁是什么？
+GIL锁是保护临界资源。临界资源指的是一些虽作为共享资源却又无法同时被多个线程共同访问的共享资源。
+当有进程在使用临界资源时，其他进程必须依据操作系统的同步机制等待占用进程释放该共享资源才可重新竞争使用共享资源。
+
+使用GIL的解释器(Cpython里面是互斥锁)只允许同一时间执行一个线程(内核态的线程)
+
+
+Python GIL的作用
+cnt = list()
+
+# 生产者
+cnt = list()
+
+# 生产者
+cnt.append(1)
+
+# 消费者
+cnt.pop()
+
+lock
+判断List容量是否已经最大
+扩大List容量
+分配内存，放入新元素
+unlock
+
+python解释器涉及到内存资源数据的时候都要加锁，如果把需要加锁的资源分别加锁，如下
+	list 容器方法: append clear copy count index
+	其他容器 tuple dict
+	进行分别加锁 就不会导致一个进程一个线程能执行
+
+但是实际不是这样做，而是把整个python解释器加了一个全局锁，这样就不用考虑里面的List Tuple dict等资源 历史单CPU原因
+
+
+如果3个线程 一个线程一直占用GIL锁 其他线程能申请，但是申请不到GIL锁，就一直不释放
+Tick是python虚拟机层面的概念，
+Python代码输入到Python虚拟机被翻译成字节码
+Tick既叫节码片段也叫Python虚拟机指令
+当这个线程占用100次ticks 就让这个线程释放GIL锁
+
+但是ticks有的时间执行的时间长，有的时间执行的时间段，python3就改成5ms的限制
+I/O过程也会释放GIL 磁盘IO 网络IO
+
+多线程运行需要竞争申请GIL
+Python虚拟机强制释放GIL
+I/O过程自动释放GIL
+
+Ruby和python一样是伪多线程的
+Php默认不支持多线程 扩展库实现
+Lua只支持单线程 多进程优化
+Perl多线程在Linux是通过多个Process实现的
+shell是没有线程概念
+javascript 浏览器是在单线程的 异步接口是很成熟实现多线程
+

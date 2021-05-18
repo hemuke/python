@@ -1,0 +1,5 @@
+2021-03-22 17:04:44 - root - Level 100 -01_logging:  你好，我是20
+2021-03-22 17:08:50 - root - CRITICAL -01_logging:  今天系统奔溃
+2021-03-22 17:08:50 - root - ERROR -01_logging:  bug
+2021-04-12 17:47:25 - root - CRITICAL -01_logging:  今天系统奔溃
+2021-04-12 17:47:25 - root - ERROR -01_logging:  bug

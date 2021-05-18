@@ -1,0 +1,51 @@
+什么是生成器
+迭代 重复执行一系列运算步骤，直到满足一定条件
+迭代器 在可迭代对象上进行数据遍历访问的接口
+可迭代对象 可以通过迭代器迭代出对象内数据的对象
+
+
+for item in list_:
+    print(item)
+List 可迭代对象
+for 循环是迭代的动作
+
+
+
+for k,v in map_.items():
+    print(k, v)
+map 可迭代对象
+for 循环是迭代的动作
+
+
+
+for item in set_:
+    print(item)
+set 可迭代对象
+for 循环是迭代的动作
+
+
+
+>>> L = [i for i in range(1000000)]
+>>> t = (i for i in range(1000000))
+>>> import sys
+>>> sys.getsizeof(L)
+8697456
+>>> sys.getsizeof(t)
+112
+
+
+
+
+生成器的特点
+生成器和列表非常类似，拥有一样的迭代方式
+内存模型上更节省内存空间
+生成器只能遍历一次
+
+t = (i for i in range(10000))
+for i in t:
+    print(i)
+
+for i in t:
+    print(i)
+
+可以延时计算

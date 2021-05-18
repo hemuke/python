@@ -1,0 +1,11 @@
+# 不同的模块存在相同的属性
+# 正确导入方式
+from modb import v as vb
+from moda imoprt v as va
+print(vb)
+print(va)
+
+import moda
+import modb
+print(moda.v)
+print(modb.v)
